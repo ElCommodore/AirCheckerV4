@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="aqiGood">#00FF00</color>
+    <color name="aqiMedium">#FFFF00</color>
+    <color name="aqiBad">#FF0000</color>
+    <color name="aqiHazard">#770000</color>
+</resources>

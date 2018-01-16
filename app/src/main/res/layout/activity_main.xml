@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context="com.aircheckersolutions.airchecker.aircheckerv4.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_green_light"
+            android:text="Refresh"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"/>
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_refresh"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/txt_pollutant"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btn_settings"
+            android:text="Pollutants"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/iv_pollutants"
+            android:layout_width="512px"
+            android:layout_height="411px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_pollutant"
+            app:srcCompat="@drawable/smiley_refresh" />
+
+        <TextView
+            android:id="@+id/txt_pollen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:text="Pollen"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_pollutants"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/iv_pollen"
+            android:layout_width="512px"
+            android:layout_height="411px"
+            android:layout_below="@+id/txt_pollen"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/smiley_refresh" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_pollen"
+            android:src="@drawable/swipemoredetails"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

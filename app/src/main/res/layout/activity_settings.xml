@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aircheckersolutions.airchecker.aircheckerv4.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pollutants"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="43dp" />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PM25"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PM10"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="108dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ozone"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="140dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nitrogene Dioxide"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="172dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sulfur Dioxide"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="204dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbone Monooxide"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="236dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pollen"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="282dp" />
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambrosia"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="313dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beifuß"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="348dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birke"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="375dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erle"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="407dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esche"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="439dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gräser"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="471dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haselnuss"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="503dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roggen"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="535dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/holo_blue_bright"
+            android:text="Save Changes"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="613dp"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
