@@ -71,8 +71,8 @@
             app:srcCompat="@drawable/smiley_refresh" />
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/iv_pollen"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
             android:src="@drawable/swipemoredetails"/>
 
 

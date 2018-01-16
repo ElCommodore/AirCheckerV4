@@ -10,21 +10,36 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background">
+        <TextView
+            android:id="@+id/txt_pollutant_detail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Pollutants"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
         <ListView
             android:id="@+id/lv_pollutants"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginTop="20dp"></ListView>
+            android:layout_height="230dp"
+            android:layout_below="@id/txt_pollutant_detail"></ListView>
+        <TextView
+            android:id="@+id/txt_pollen_detail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Pollen"
+            android:textSize="20dp"
+            android:layout_below="@id/lv_pollutants"
+            android:textColor="@android:color/white"/>
         <ListView
             android:id="@+id/lv_pollen"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_below="@id/lv_pollutants"
+            android:layout_height="230dp"
+            android:layout_below="@id/txt_pollen_detail"
             android:layout_marginTop="10dp"></ListView>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/lv_pollen"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
             android:src="@drawable/swipelessdetails"/>
 
 

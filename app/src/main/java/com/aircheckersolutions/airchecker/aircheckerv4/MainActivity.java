@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Appsee.start("ad88793b5fe944b1be886ab9e2a888d5");
+        Appsee.start("ad88793b5fe944b1be886ab9e2a888d5");
 
         RelativeLayout rl_main = (RelativeLayout)findViewById(R.id.rl_main);
 
