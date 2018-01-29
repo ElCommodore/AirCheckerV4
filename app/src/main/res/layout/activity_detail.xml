@@ -10,17 +10,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background">
+        <Button
+            android:id="@+id/btn_refresh_d"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_green_light"
+            android:text="Refresh"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"/>
+        <Button
+            android:id="@+id/btn_settings_d"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_refresh_d"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"/>
         <TextView
             android:id="@+id/txt_pollutant_detail"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Pollutants"
             android:textSize="20dp"
+            android:layout_below="@id/btn_settings_d"
             android:textColor="@android:color/white"/>
         <ListView
             android:id="@+id/lv_pollutants"
             android:layout_width="match_parent"
-            android:layout_height="230dp"
+            android:layout_height="180dp"
             android:layout_below="@id/txt_pollutant_detail"></ListView>
         <TextView
             android:id="@+id/txt_pollen_detail"
@@ -33,7 +51,7 @@
         <ListView
             android:id="@+id/lv_pollen"
             android:layout_width="match_parent"
-            android:layout_height="230dp"
+            android:layout_height="180dp"
             android:layout_below="@id/txt_pollen_detail"
             android:layout_marginTop="10dp"></ListView>
         <ImageView

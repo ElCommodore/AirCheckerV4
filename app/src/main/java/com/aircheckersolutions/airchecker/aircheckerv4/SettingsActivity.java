@@ -15,14 +15,20 @@ import java.io.OutputStreamWriter;
 
 public class SettingsActivity extends AppCompatActivity {
 
+    Class callerClass;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
         Intent intent = getIntent();
-        final String message = intent.getStringExtra("boolString");
 
+        callerClass = null;
+
+
+        final String message = intent.getStringExtra("boolString");
+        final String caller  = getIntent().getStringExtra("caller");
 
         final CheckBox cb_pm25 = (CheckBox) findViewById(R.id.checkBox);
         final CheckBox cb_pm10 = (CheckBox) findViewById(R.id.checkBox2);
@@ -168,121 +174,15 @@ public class SettingsActivity extends AppCompatActivity {
                 String finalString = sb.toString();
 
                 WriteConfig(finalString);
+                Intent i;
+                if(caller.equals("MainActivity")){
+                    i = new Intent(SettingsActivity.this, MainActivity.class);
+                }
+                else{
+                    i = new Intent(SettingsActivity.this, DetailActivity.class);
+                }
 
-                Intent i = getBaseContext().getPackageManager()
-                        .getLaunchIntentForPackage( getBaseContext().getPackageName() );
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
-//
-//                String FILENAME = "config.cfg";
-//                BufferedWriter writer;
-//
-//                FileOutputStream fos = null;
-//                try {
-//                    fos = openFileOutput(FILENAME, MODE_PRIVATE);
-//                    writer = new BufferedWriter(new OutputStreamWriter(fos));
-//
-//                    if(cb_pm25.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_pm10.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_o3.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_no2.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_so2.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_co.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//
-//                    if(cb_ambrosia.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_beifuss.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_birke.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_erle.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_esche.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_graeser.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_haselnuss.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//                    if(cb_roggen.isChecked()){
-//                        writer.write("1");
-//                    }
-//                    else{
-//                        writer.write("0");
-//                    }
-//
-//                    writer.write(message.charAt(15));
-//
-//                    writer.close();
-//                    //fos.write(string.getBytes());
-//                    fos.close();
-//                } catch (FileNotFoundException e) {
-//                    e.printStackTrace();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//
-//
-//
-//
-
 
             }
         });
