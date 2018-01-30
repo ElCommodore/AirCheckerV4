@@ -137,7 +137,7 @@ public class DataManager {
 
     private void WriteToFile(String data) {
         try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("config.cfg", Context.MODE_PRIVATE));
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("config_v152.cfg", Context.MODE_PRIVATE));
             outputStreamWriter.write(data);
             outputStreamWriter.close();
         }
@@ -151,7 +151,7 @@ public class DataManager {
         String ret = "";
 
         try {
-            InputStream inputStream = context.openFileInput("config.cfg");
+            InputStream inputStream = context.openFileInput("config_v152.cfg");
 
             if ( inputStream != null ) {
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);

@@ -189,7 +189,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void WriteConfig(String _boolString) {
-        String FILENAME = "config.cfg";
+        String FILENAME = "config_v152.cfg";
         BufferedWriter writer;
         FileOutputStream fos = null;
         try {
