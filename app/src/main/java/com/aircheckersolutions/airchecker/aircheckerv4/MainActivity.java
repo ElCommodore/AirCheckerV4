@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //Appsee.start("ad88793b5fe944b1be886ab9e2a888d5");
+        Appsee.start("ad88793b5fe944b1be886ab9e2a888d5");
 
         if (!isTaskRoot()) {
             Intent intent = getIntent();
